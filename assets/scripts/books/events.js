@@ -1,3 +1,9 @@
+
+'use strict'
+const booksApi = require('./api')
+// imports onSuccess and onError from ui.js
+const booksUi = require('./ui')
+
 const getBooks = function (e) {
   e.preventDefault()
   // index sends get request to get that data
@@ -10,3 +16,5 @@ const getBooks = function (e) {
   // .catch() is a method if the request doesn’t work it will run booksUi.onError
     .catch(booksUi.onError)
   }
+
+  module.exports = getBooks
