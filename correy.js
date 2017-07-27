@@ -1,3 +1,5 @@
 'use strict'
 
-console.log('hi')
+const hello = function () {
+  console.log('THE SLEEPING SAMURI')
+}
